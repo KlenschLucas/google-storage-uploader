@@ -1,0 +1,26 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Klensch Lucas",
+  "license": "MIT",
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.5.2",
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.2",
+    "morgan": "~1.9.0",
+    "request": "^2.83.0",
+    "serve-favicon": "~2.4.5"
+  }
+}
