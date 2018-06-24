@@ -12,10 +12,10 @@ const project_id = config.google_config.project_id;
 
 // Creates a client for google storage
 const storage = new Storage(
-    {
-        project_id: project_id,
-        bucket_name: bucketName
-    }
+    // {
+    //     project_id: project_id,
+    //     bucket_name: bucketName
+    // }
 );
 
 // Declare Folders for Uploads and Downloads of files
