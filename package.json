@@ -1,5 +1,5 @@
 {
-  "name": "google-tools",
+  "name": "web-tools",
   "version": "1.0.0",
   "private": false,
   "author": "Klensch Lucas",
@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@google-cloud/storage": "^1.5.2",
+    "cheerio": "^1.0.0-rc.2",
+    "onedrive-api": "^0.1.4",
     "progress": "^2.0.0",
+    "request": "^2.87.0",
     "webtorrent": "^0.100.0"
   }
 }

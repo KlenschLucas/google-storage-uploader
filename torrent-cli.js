@@ -1,3 +1,3 @@
-let torrent = require('./torrent');
+let torrent = require('./functions/torrent');
 
 torrent.download(process.argv[2]);

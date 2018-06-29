@@ -12,12 +12,12 @@ Install dependencies `npm install` or `yarn install`
 #### Command Line Tools
 Run Torrent downloaded `node torrent-cli.js [magnet link]`
 
-Run Directory Search `node checkDirectory.js [directory]`
+Run Directory Search `node check_directory.js [directory]`
 
 #### Use programmatically
 Require `torrent.js` for torrent downloads
 
-Require `checkDirectory.js` to check directories 
+Require `check_directory.js` to check directories 
 
 ### Packages
 Webtorrent - For downloading torrent files
