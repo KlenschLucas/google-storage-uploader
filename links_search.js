@@ -1,8 +1,11 @@
 const cheerio = require('cheerio');
 const request = require('request');
 
+const links = [];
+
 const checkLinks = function(base, url, string) {
-  request((base + url), (err, response, html) => {
+  // let linksa = [];
+  request((base  + url), (err, response, html) => {
     let $ = cheerio.load(html);
     let array = $('a').toArray();
     array.map(linkData => {
@@ -14,10 +17,10 @@ const checkLinks = function(base, url, string) {
         if (link.toUpperCase().includes(string.toUpperCase()) &&
             !link.includes('/')) {
           // link.push(link);
-          console.log(`${base + url + link}`);
+          console.log(`${base+url+link}`);
         }
       }
     });
   });
 };
-checkLinks('https://download.blender.org/demo/', '', 'demo');
+checkLinks(process.argv[2],'',process.argv[3]);

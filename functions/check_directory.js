@@ -24,7 +24,7 @@ let search = function(dir, done) {
   });
 };
 
-search('./downloads', function(err, results) {
+search('..', function(err, results) {
   if (err) throw err;
   console.log(results);
 });
